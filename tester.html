@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name - Portfolio</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="bg-gray-800 text-white flex justify-between py-4 px-4">
+    <h1 class="text-xl font-bold">Your Name</h1>
+    <nav class="hidden sm:flex space-x-4">
+      <a href="#hero" class="hover:text-gray-400">Home</a>
+      <a href="#skills" class="hover:text-gray-400">Skills</a>
+      <a href="#projects" class="hover:text-gray-400">Projects</a>
+      <a href="#contact" class="hover:text-gray-400">Contact</a>
+    </nav>
+    <button class="sm:hidden focus:outline-none text-white hover:text-gray-400" id="menu-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16v12H4zm2-2a2 2 0 10-4 0 2 2 0 004 0z" />
+      </svg>
+    </button>
+  </header>
+
+  <main class="container mx-auto px-4 py-16">
+
+    <section id="hero" class="bg-cover bg-no-repeat h-screen relative" style="background-image: url('hero-image.jpg');">
+      <div class="flex items-center justify-center h-full text-center text-white">
+        <h1 class="text-4xl font-bold mb-4">Hello, I'm Your Name</h1>
+        <p class="text-xl leading-relaxed">A passionate web developer with a focus on building user-friendly and creative websites.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="flex flex-wrap justify-center gap-4 py-8">
+      <div class="w-full md:w-1/3 bg-gray-100 p-4 rounded shadow">
+        <h3>Front-End Development</h3>
+        <ul class="list-disc ml-4 mt-2">
+          <li>HTML & CSS</li>
+          <li>JavaScript (Vanilla & Frameworks)</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/3 bg-gray-100 p-4 rounded shadow">
+        <h3>Back-End Development</h3>
+        <ul class="list-disc ml-4 mt-2">
+          <li>Server-side Programming (e.g. PHP, Python)</li>
+          <li>Databases (e.g. MySQL, PostgreSQL)</li>
+          <li>APIs & Integrations</li>
+        </ul>
+      </div>
+      <div class="w-full md:w-1/3 bg-gray-100 p-4 rounded shadow">
+        <h3>Other Skills</h3>
+        <ul class="list-disc ml-4 mt-2">
+          <li>Version Control (Git)</li>
+          <li>Design Thinking & Problem Solving</li>
+          <li>Communication & Collaboration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+      <div class="bg-white rounded shadow overflow-hidden">
+        <img src="project1.jpg" alt="Project 1" class="w-full h-48 object-cover">
